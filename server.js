@@ -15,7 +15,7 @@ const fetchCoin = async () => {
   return data;
 };
 
-/*setInterval(async () => {
+setInterval(async () => {
   const coinDatas = await fetchCoin();
   const messagePromises = coinDatas.map(coin => sendMessageForCoin(coin));
   try {
@@ -24,7 +24,7 @@ const fetchCoin = async () => {
       console.log(e);
   }
 
-}, 60000);*/
+}, 60000);
 
 async function sendMessageForCoin(coin) {
   if (price <= 5000) {
