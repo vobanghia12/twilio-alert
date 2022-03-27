@@ -1,0 +1,24 @@
+
+{
+  "name": "alertphone",
+  "version": "1.0.0",
+  "main": "index.cjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3",
+    "node-fetch": "^3.2.3",
+    "twilio": "^3.76.0"
+  }
+
+ 
+
+}
