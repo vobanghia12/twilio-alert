@@ -24,7 +24,7 @@ setInterval(async () => {
       console.log(e);
   }
 
-}, 2000);
+}, 5000);
 
 async function sendMessageForCoin(coin) {
   if (price <= 5000) {
