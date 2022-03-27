@@ -14,7 +14,7 @@ const fetchCoin = async () => {
   );
   return data;
 };
-
+/*
 setInterval(async () => {
   const coinDatas = await fetchCoin();
   const messagePromises = coinDatas.map(coin => sendMessageForCoin(coin));
@@ -25,17 +25,18 @@ setInterval(async () => {
   }
 
 }, 5000);
-
+/*
 async function sendMessageForCoin(coin) {
   if (price <= 5000) {
     const message = await client.messages
       .create({
-        // body: JSON.stringify(coin),
-        // messagingServiceSid: "MGe958d53389b7e7022d9583fbd1c534e3",
-        // to: str,
+        body: JSON.stringify(coin),
+        messagingServiceSid: "MGe958d53389b7e7022d9583fbd1c534e3",
+        to: str,
       });
 
     console.log(message);
   }
 }
 
+*/
