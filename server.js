@@ -24,21 +24,18 @@ setInterval(async () => {
       console.log(e);
   }
 
-}, 3000);
+}, 2000);
 
 async function sendMessageForCoin(coin) {
   if (price <= 5000) {
     const message = await client.messages
       .create({
-        body: getCoinMessageText(coin),
+        body: JSON.stringify(coin),
         messagingServiceSid: "MGe958d53389b7e7022d9583fbd1c534e3",
-        to: coin.phoneNumber,
+        to: str,
       });
 
-    console.log(coin);
+    console.log(message);
   }
 }
 
-function getCoinMessageText(coin) {
-    return coin.cryptoList.toString();
-}
